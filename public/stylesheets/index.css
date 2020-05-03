@@ -1,0 +1,100 @@
+body{
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#form-header{
+    text-align: center; 
+    color: rgb(224, 239, 241); 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    text-shadow: 1px 1px 1.25px seashell;
+}
+
+/* 
+Main page */
+.parts h2{
+	color: #ea1c2c;
+	font-weight: 500;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+.parts p{
+	color: #e791af;
+	font-weight: 100;
+	font-size: 1.35rem;
+	line-height: 2;
+}
+
+.sections{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grid li{
+    list-style: none;
+    padding: 50px;
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.grid li i{
+    color: #8c9eff;
+}
+
+.grid li h4{
+    font-size: 30px;
+    margin: 25px 0;
+    color: cornsilk;
+}
+
+.grid li p{
+    color: cyan;
+}
+
+@media (max-width: 800px){
+    .grid li{
+        flex-basis: 100%;
+        padding: 20px;
+    }
+}
+
+/* quotes section */
+.testimonials .quote{
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 40px 0 25px;
+    color: darkturquoise;
+}
+
+.testimonials .author{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: dimgrey;
+}
+
+.testimonials button{
+    margin: 10px;
+}
+
+@media (max-width: 800px){
+    .testimonials .quote{
+        font-size: 18px;
+        margin: 15px 0;      
+    }
+
+    .testimonials .author{
+        font-size: 14px; 
+    }
+}

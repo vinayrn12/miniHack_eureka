@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fitness App</title>
+        <link rel="stylesheet" href="/stylesheets/landing.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e9d9f953d8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-static-top" id="nav">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                <a class="navbar-brand" id="brand" href="/"><i class="fas fa-dumbbell"></i>  FITHUB</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                <li><a href="/register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <% if(error && error.length > 0){ %>
+                <div class="alert alert-danger" role="alert">
+                    <%= error %>
+                </div>
+            <% } %>
+            <% if(success && success.length > 0){ %>
+                <div class="alert alert-success" role="alert">
+                    <%= success %>
+                </div>
+                <% } %>
+        </div>
+
+        <ul class="grid">
+            <li class="small" style="background-image: url(https://wallpaperplay.com/walls/full/3/6/a/32722.jpg);"></li>
+            <li class="large" style="background-image: url(https://wallpaperplay.com/walls/full/9/6/c/32713.jpg);"></li>
+            <li class="large" style="background-image: url(https://wallpaperplay.com/walls/full/8/7/a/32730.jpg);"></li>
+            <li class="small" style="background-image: url(https://wallpaperplay.com/walls/full/4/d/1/32719.jpg);"></li>
+        </ul>
+
+        <div class="foot">
+            <p>Images courtesy of <a href="https://unsplash.com/">Unsplash</a></p>
+            <ul>
+                <li><a href="#"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                <li><a href="#"><i class="fab fa-snapchat-square fa-2x"></i></a></li>
+            </ul>
+        </div>
+    </body>
+</html>

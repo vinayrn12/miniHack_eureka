@@ -1,0 +1,28 @@
+<%- include("../partials/header_exercise"); %>
+
+<div class="jumbotron"><h1><i class="fas fa-dumbbell"></i> Workout Program</h1></div>
+<div class="container lom">
+    
+    <% workout.forEach(function(exercise){ %>
+        <div class="row">
+            <div class="ui fluid card">
+                <a class="image" href="/workout/dailyworkout/<%= exercise._id %>" >
+                  <img src="<%= exercise.image %>" class="img-fluid" alt="Responsive image">
+                </a>
+                <div class="content">
+                  <a class="header" href="/workout/dailyworkout/<%= exercise._id %>"><%= exercise.muscle %></a>
+                  <div class="ui vertical animated secondary button" tabindex="0">
+                    <a class="hidden content" href="/workout/dailyworkout/<%= exercise._id %>">Exercise</a>
+                    <div class="visible content">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                  </div>
+                  
+                </div>
+            </div>
+        </div>
+    <% }); %>
+    <a href="/workout" class="ui inverted secondary button" style="justify-content: center; margin: 10px;">Go Back</a>
+</div>
+
+<%- include("../partials/footer"); %>

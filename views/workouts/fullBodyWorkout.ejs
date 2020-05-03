@@ -1,0 +1,39 @@
+<%- include("../partials/header_exercise"); %>
+
+<div class="jumbotron">
+    <h1>Full Body Workout Program</h1>
+    <p class="lead">This is a workout program for people who only have 1 - 2 hours per week for exercising</p>
+</div>
+<div class="container">
+    
+    <div class="ui inverted segment">
+        <div class="ui inverted relaxed divided list">
+            <% workout.forEach(function(exercise){ %>
+                <div class="item">
+                    <div class="content">
+                        <div class="header">
+                            <%= exercise.name %>
+                            
+                        </div>
+                    </div>
+                    <div class="content">
+                        <a href="<%= exercise.url %>" class="ui inverted basic secondary button" id="Fullbodyvideolink">Video Link</a>
+                    </div>
+
+                </div>
+            <% }); %>
+            <div class="item">
+                <div class="content">
+                    <div class="header">
+                        <p>Repeat till exhaustion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <a href="/workout" class="ui inverted secondary button" style="justify-content: center; margin: 10px;">Go Back</a>
+</div>
+
+
+
+<%- include("../partials/footer"); %>

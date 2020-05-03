@@ -1,0 +1,109 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+} */
+
+ul{
+    list-style: none;
+}
+
+#nav{
+    margin: 0;
+}
+
+#brand{
+    margin-left: 40px;
+}
+
+.grid{
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.grid li{
+    height: 325px;
+    padding: 20px;
+    background-size: cover;
+    background-clip: content-box;
+    background-position: center; 
+}
+
+li.small{
+    flex-basis: 30%;
+}
+
+li.large{
+    flex-basis: 70%;
+}
+
+@media (max-width: 1100px){
+    li.small, li.large{
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 800px){
+    li.small, li.large{
+        flex-basis: 100%;
+    }
+}
+
+a{
+    text-decoration: none;
+    opacity: 0.75;
+    color: #fff;
+}
+
+a:hover{
+    opacity: 1;
+}
+
+/* footer section */
+.foot{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #571e3a;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.foot ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.foot ul li{
+    margin-left: 16px;
+}
+
+.foot p{
+    text-transform: uppercase;
+    font-size: 14px;
+    opacity: 0.6;
+    align-self: center;
+}
+
+@media(max-width:1100px){
+    .foot{
+        flex-direction: column;
+    }
+
+    .foot p{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .foot ul li{
+        margin: 0 8px;
+    }
+}
