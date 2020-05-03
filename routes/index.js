@@ -44,4 +44,8 @@ router.get("/logout", function(req, res){
     res.redirect("/");
 });
 
+router.get("/snake", function(req, res){
+    res.render("snake");
+});
+
 module.exports = router;
