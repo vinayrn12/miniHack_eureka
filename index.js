@@ -11,7 +11,6 @@ const express           = require('express'),
       User              = require('./models/user');
 
 mongoose.connect("mongodb+srv://vinay:vinay12@cluster0-a67ci.mongodb.net/test", {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
-//mongoose.connect("mongodb+srv://vinay:%2ASANJANArn12@yelp-7egas.azure.mongodb.net/test", {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false});
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
